@@ -37,4 +37,7 @@ out/
 .vscode/
 
 ### properties ###
-*.properties
+application-local.properties
+
+### Mac Os ###
+.DS_Store
