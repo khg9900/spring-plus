@@ -32,7 +32,7 @@ public class SecurityConfig {
             )
             // 인증/인가 URL 설정
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/auth/**").permitAll() // 인증 없이 가능
+                .requestMatchers("/auth/**", "/health").permitAll() // 인증 없이 가능
                 .requestMatchers("/admin/**").hasAuthority("ADMIN") // OWNER 권한을 가진 사용자만 접근 가능
                 .anyRequest().authenticated() // 그 외는 인증 필요
             )

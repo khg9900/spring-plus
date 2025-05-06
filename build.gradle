@@ -49,6 +49,12 @@ dependencies {
     annotationProcessor "com.querydsl:querydsl-apt:${dependencyManagement.importedProperties['querydsl.version']}:jakarta"
     annotationProcessor "jakarta.annotation:jakarta.annotation-api"
     annotationProcessor "jakarta.persistence:jakarta.persistence-api"
+
+    // AWS
+    implementation 'org.springframework.cloud:spring-cloud-starter-aws:2.2.6.RELEASE'
+    implementation 'io.awspring.cloud:spring-cloud-aws-starter:3.1.1'
+    implementation 'com.amazonaws:aws-java-sdk-s3:1.12.767'
+
 }
 
 tasks.named('test') {

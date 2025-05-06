@@ -39,6 +39,6 @@ out/
 
 ### properties ###
 application-local.yml
-
+gradle-wrapper.properties
 ### Mac Os ###
 .DS_Store
